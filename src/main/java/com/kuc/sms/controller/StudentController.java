@@ -1,5 +1,6 @@
 package com.kuc.sms.controller;
 
+import com.kuc.sms.entity.Student;
 import com.kuc.sms.service.StudentService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,5 +21,14 @@ public class StudentController {
     public String listStudents(Model model) {
         model.addAttribute("students", studentService.getAllStudents());
         return "students";
+    }
+
+    @GetMapping("/students/new")
+    public String createStudentForm(Model model) {
+
+        // create student object to hold student form data
+        Student student = new Student();
+        model.addAttribute("student", student);
+        return "create_student";
     }
 }
