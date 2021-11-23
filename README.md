@@ -15,14 +15,21 @@ It communicates with a MySQL database.
 MySQL database is specified to run on `port:3306` with username=`root` and password=`pass`.
 Data is stored in `sms` database which is required to exist prior lunching app. 
 
-Run the following query to create the required database:
+Run the following query in MySQL to create the required database:
 ```
 CREATE DATABASE sms;
 ```
 
-### Download app
+### Download and execute app
 
-Clone repository:
+Clone repository and open project folder:
 ```
-git clone https://github.com/albertkuc/student-management-system.git
+git clone https://github.com/albertkuc/StudentManagement.git
+
+cd StudentManagement
+```
+
+Execute jar file
+```
+java -jar StudentManagement-0.0.1-SNAPSHOT.jar
 ```
