@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.kuc</groupId>
-	<artifactId>student-management-system</artifactId>
+	<artifactId>StudentManagement</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>student-management-system</name>
 	<description>Student Management System using Spring Boot and Thymeleaf</description>
