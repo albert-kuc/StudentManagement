@@ -11,4 +11,6 @@ public interface StudentService {
     Student saveStudent(Student student);
 
     void readStudentByIdToModel(Long id, Model model);
+
+    Student replaceStudentDetails(Long id, Student newStudentDetails);
 }

@@ -46,4 +46,10 @@ public class StudentController {
         studentService.readStudentByIdToModel(id, model);
         return "edit_student";
     }
+
+    @PostMapping("/students/{id}")
+    public String updateStudent(@PathVariable Long id, @ModelAttribute("student") Student newStudentDetails) {
+        studentService.replaceStudentDetails(id, newStudentDetails);
+        return "redirect:/students";
+    }
 }
