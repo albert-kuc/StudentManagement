@@ -47,4 +47,11 @@ public class StudentServiceImpl implements StudentService{
 
         return studentRepository.save(existingStudent);
     }
+
+    @Override
+    public void removeStudent(Long studentId) {
+        studentRepository.findById(studentId)
+                .orElseThrow(() -> new EntityNotFoundException("Student not found for this id :: " + studentId));
+        studentRepository.deleteById(studentId);
+    }
 }

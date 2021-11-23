@@ -13,4 +13,6 @@ public interface StudentService {
     void readStudentByIdToModel(Long id, Model model);
 
     Student replaceStudentDetails(Long id, Student newStudentDetails);
+
+    void removeStudent(Long id);
 }
